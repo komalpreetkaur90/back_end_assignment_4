@@ -18,3 +18,4 @@ app.get("/", (req, res) => {
 app.use("/api/v1/loans", loanRoutes);
 
 export default app;
+
