@@ -41,3 +41,5 @@ export const deleteLoan = (req: Request, res: Response) => {
     message: `Loan application with ID ${id} deleted successfully.`
   });
 };
+
+
