@@ -1,0 +1,37 @@
+{
+  "name": "assignment_4",
+  "version": "1.0.0",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "npx ts-node src/server.ts",
+    "dev": "nodemon --watch \"src/**/*.ts\" --exec \"npx ts-node src/server.ts\"",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/komalpreetkaur90/back_end_assignment_4.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/komalpreetkaur90/back_end_assignment_4/issues"
+  },
+  "homepage": "https://github.com/komalpreetkaur90/back_end_assignment_4#readme",
+  "description": "",
+  "dependencies": {
+    "express": "^5.1.0",
+    "morgan": "^1.10.1"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.5",
+    "@types/morgan": "^1.9.10",
+    "@types/node": "^24.9.1",
+    "nodemon": "^3.1.10",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.9.3"
+  }
+}
