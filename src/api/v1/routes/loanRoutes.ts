@@ -6,8 +6,13 @@ import {
   updateLoan,
   deleteLoan
 } from "../controllers/loanController";
+import authenticate from "../middleware/authenticate";
+import authorize from "../middleware/authorize";
 
 const router = express.Router();
+
+router.use(authenticate, authorize({ hasRole: ["admin"] }));
+
 
 router.get("/", getAllLoans);
 router.get("/:id", getLoanById);
